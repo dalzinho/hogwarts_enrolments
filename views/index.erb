@@ -1,11 +1,28 @@
-<% for student in @students %>
+<div class='table-container'>
+  <div class="grid">
+    <div class="grid-row-headings">
+      <div class="grid-cell">First Name</div>
+      <div class="grid-cell">Last Name</div>
+      <div class="grid-cell">House</div>
+      <div class="grid-cell">Age</div>
+    </div>
 
-<p> first name: <%= student.first_name %>  </p>
-<p> second name: <%= student.second_name %>  </p>
-<p> house: <%= student.house %>  </p>
-<p> age: <%= student.age %>  </p>
 
+    <% for student in @students %>
+    <div class="grid-row">
+      <div class="grid-cell"><%= student.first_name %></div>
+      <div class="grid-cell"><%= student.second_name %></div>
+      <div class="grid-cell"><%= student.get_house['house_name'] %></div>
+      <div class="grid-cell"><%= student.age %></div>
+    </div>
+    <% end %>
 
-
-
-<% end %>
+  </div>
+</div>
+  <!-- <table>
+  <thead>
+  <th>First Name</th>
+  <th>Second Name</th>
+  <th>House</th>
+  <th>Age</th>
+  </thead> -->

@@ -1,29 +1,34 @@
-<form action="/students" method="post">
-  <label>
-    First name:
-    <input type="text" name="first_name">
-  </label>
-
+<div class="new-student">
   <form action="/students" method="post">
+    <label>
+      First name:
+      <input type="text" name="first_name">
+    </label>
+
     <label>
       Second name:
       <input type="text" name="second_name">
     </label>
 
-    <form action="/students" method="post">
-      <label>
-        Age:
-        <input type="number" name="age">
-      </label>
+ 
+    <label>
+      Age:
+      <input type="number" name="age">
+    </label>
+  
 
-      <label>
-        Select a house:
-        <select name="house">
+  
+    <label>
+      Select a house:
+      <select name="house">
         <% for house in House.get_all %>
-          <option value="<%= house.house_id %>"><%= house.house_name %></option>
-          <% end %>
-        </select>  
-      </label>
-      <input type="submit" value="create student">
-      </form>
+        <option value="<%= house.house_id %>"><%= house.house_name %></option>
+        <% end %>
+      </select>  
+    </label>
+  
+  
+    <input type="submit" value="create student">
+  </form>
+</div>
 

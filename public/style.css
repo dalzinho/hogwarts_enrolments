@@ -1,0 +1,93 @@
+body {
+  background-color: #e3dede;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: 'Alfa Slab One', serif;
+  font-size: 40px;
+  background-color: #8b8687;
+  padding: 50px 0 50px 20px;
+  margin-bottom: 5px;
+
+
+}
+
+nav {
+  background-color: #a3a1a1;
+
+  font-family: 'Bitter', serif;
+
+}
+
+nav ul{
+
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+nav li:hover {
+  color: #f6ea8c;
+  text-shadow: 2px 2px 2px 2px;
+}
+
+
+
+.table-container {
+  display: flex;
+  justify-content: center;
+
+}
+.grid {
+
+  min-width: 600px;
+  display: table;
+
+}
+
+.grid-row {
+  
+  display: table-row;
+  background-color: #a3a1a1;
+}
+
+.grid-row:hover {
+  background-color: #f6ea8c;
+}
+
+.grid-row-headings {
+  display: table-header-group;
+  background-color: #8b8687;
+}
+
+.grid-cell {
+  justify-content: space-around;
+  padding: 20px;
+  display: table-cell;
+  font-family: 'Bitter', serif;
+}
+
+.motto {
+display: flex;
+justify-content: center;
+font-family: 'Great Vibes', cursive;
+font-size: 30px;
+padding-top: 50px;
+}
+
+.new-student {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
