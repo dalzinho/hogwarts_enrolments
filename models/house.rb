@@ -1,5 +1,7 @@
 class House
 
+  attr_reader :house_name, :house_id
+
 
   def initialize (options)
     @house_id = options["house_id"].to_i

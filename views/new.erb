@@ -19,10 +19,9 @@
       <label>
         Select a house:
         <select name="house">
-          <option value="Gryffindor">Gryffindor</option>
-          <option value="Hufflepuff">Hufflepuff</option>
-          <option value="Ravenclaw">Ravenclaw</option>
-          <option value="Slytherin">Slytherin</option>
+        <% for house in House.get_all %>
+          <option value="<%= house.house_id %>"><%= house.house_name %></option>
+          <% end %>
         </select>  
       </label>
       <input type="submit" value="create student">
